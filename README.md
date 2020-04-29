@@ -1,0 +1,1 @@
+Fork of the project 'Truth Inference Crowd' from: https://zhydhkcws.github.io/crowd_truth_inference/index.html 
