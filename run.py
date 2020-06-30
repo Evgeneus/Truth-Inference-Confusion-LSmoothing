@@ -1,88 +1,84 @@
 __author__ = 'JasonLee'
 
 import commands
-import sys
 import random
 import pandas as pd
+import numpy as np
 
-# # Read Args
-# if len(sys.argv) != 4 and len(sys.argv) != 5:
-#     print "usage: %s %s %s %s %s" % \
-#           (sys.argv[0], "method_file", "answer_file", "result_file", "(decision-making/single-label/continuous)")
-#     exit(0)
-#
-# method_file, answer_file, result_file = sys.argv[1:4]
-
-#
-# if len(sys.argv) == 5:
-#     tasktype = sys.argv[4]
-#     assert tasktype in ['decision-making', 'single-label', 'continuous']
-#
-# if tasktype in ['decision-making', 'single-label']:
-#     tasktype = 'categorical'
 
 if __name__ == "__main__":
-    method = "GLAD"
+    method = "MV"
 
     if method == "MV":
         method_file = "methods/c_MV/method.py"
     elif method == "DS":
         method_file = "methods/c_EM/method.py"
     elif method == "LFC":
-        method_file = "methods/l_LFCbinary/method.py"
+        method_file = "methods/l_LFCmulti/method.py"
     elif method == "GLAD":
         method_file = "methods/c_GLAD/method.py"
 
-    answer_file = "data-soft-target/15. Wiki-attack/crowd_answers/crowd_answers_train_all.csv"
-    result_file = "data-soft-target/15. Wiki-attack/agg_train/train_all_{}.csv".format(method)
+    answer_file = "datasets/faces/faces_all_ans_"
+    gt_file = "datasets/faces/faces_all_gold.csv"
 
-    tasktype = "categorical"
-    output = commands.getoutput("python \"" + method_file + "\" \"" + answer_file + "\" " + tasktype).split('\n')[-1]
-    e2lpd = eval(output)
-    num_classes = len(e2lpd[e2lpd.keys()[0]])
-    questions = sorted([int(i) for i in e2lpd.keys()])
 
-    e2truth = {}
-    for e in e2lpd:
-        if type(e2lpd[e]) == type({}):
-            temp = 0
-            for label in e2lpd[e]:
-                if temp < e2lpd[e][label]:
-                    temp = e2lpd[e][label]
+    num_repetitions = 28
+    accuracy_list = []
+    for run in range(num_repetitions):
+        answer_file_ = answer_file + "v{}.csv".format(run+1)
+        tasktype = "categorical"
+        output = commands.getoutput("python \"" + method_file + "\" \"" + answer_file_ + "\" " + tasktype).split('\n')[-1]
+        e2lpd = eval(output)
+        num_classes = len(e2lpd[e2lpd.keys()[0]])
+        questions = sorted([int(i) for i in e2lpd.keys()])
 
-            candidate = []
+        e2truth = {}
+        for e in e2lpd:
+            if type(e2lpd[e]) == type({}):
+                temp = 0
+                for label in e2lpd[e]:
+                    if temp < e2lpd[e][label]:
+                        temp = e2lpd[e][label]
 
-            for label in e2lpd[e]:
-                if temp == e2lpd[e][label]:
-                    candidate.append(label)
+                candidate = []
 
-            truth = random.choice(candidate)
+                for label in e2lpd[e]:
+                    if temp == e2lpd[e][label]:
+                        candidate.append(label)
 
-        else:
-            truth = e2lpd[e]
+                truth = random.choice(candidate)
 
-        e2truth[int(e)] = int(truth)
+            else:
+                truth = e2lpd[e]
 
-    # with open(result_file, "w") as f:
-    #     f.write("rev_id,label\n")
-    #     for e in e2truth:
-    #         f.write(str(e) + "," + str(e2truth[e]) + "\n")
-    #
-    df = pd.read_csv("data-soft-target/15. Wiki-attack/train.csv")
-    gold_values = df['label'].values
-    with open(result_file, "w") as f:
-        header = "text_id,label,{}_label".format(method)
-        for c in range(num_classes):
-            header += ",{}conf{}".format(method, c)
-        header += "\n"
-        f.write(header)
+            e2truth[e] = truth
 
-        # for e in e2truth:
-        for q in questions:
-            line = "{},{},{}".format(q, gold_values[q], e2truth[q])
-            for c in range(num_classes):
-                line += ",{}".format(float(e2lpd[str(q)][str(c)]))
+        # evaluation
+        if "_improved" in answer_file_:
+            answer_file_ = answer_file_.replace("_improved", "")
+        df_ = pd.read_csv(answer_file_)
+        df_['question_ID'] = df_['question_ID'].astype(str)
 
-            f.write(line + "\n")
+        df_gt = pd.read_csv(gt_file)
+        df_gt['question_ID'] = df_gt['question_ID'].astype(str)
+        num_correct = 0
+        num_with_conflicts = 0.
+        for _, row in df_gt.iterrows():
+            obj_id = row['question_ID']
+            num_unique_ans = df_[df_['question_ID'] == obj_id].answer.unique().shape[0]
+            if num_unique_ans == 1:
+                continue
+            gold_val = row['gold_label']
+            agg_val = e2truth[obj_id]
+            num_with_conflicts += 1
+            if agg_val == gold_val:
+                num_correct += 1.
+        # print num_with_conflicts
+        accuracy = num_correct / num_with_conflicts
+        accuracy_list.append(accuracy)
 
+    accuracy_mean = np.mean(accuracy_list)
+    accuracy_std = np.std(accuracy_list)
+    print ("Accuracy: {:1.4} +- {:1.4}".format(accuracy_mean, accuracy_std))
     print "Finished!, ", method_file
+    print answer_file
