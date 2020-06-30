@@ -1,0 +1,501 @@
+question_ID,worker_ID,answer
+0,164,Belgium
+0,2,Belgium
+0,50,Belgium
+0,134,Belgium
+0,93,Belgium
+1,24,Costa rica
+1,44,Costa rica
+1,153,Costa rica
+1,149,Costa rica
+1,66,Costa rica
+1,24,Costa rica
+2,134,Denmark
+2,93,Denmark
+2,3,Denmark
+2,18,Denmark
+3,112,Haiti
+3,93,Haiti
+3,24,Haiti
+3,110,Haiti
+3,66,Haiti
+4,50,Hungary
+4,99,Hungary
+4,17,Hungary
+4,19,Hungary
+4,46,Hungary
+5,32,Indonesia
+5,164,Indonesia
+5,79,Monaco
+5,131,Indonesia
+6,19,Ireland
+6,40,Ireland
+6,79,Ivory coast
+6,155,Ireland
+6,32,Ireland
+7,131,Moldova
+7,32,Romania
+7,17,Moldova
+7,46,Moldova
+7,55,Moldova
+8,99,New zealand
+8,134,New zealand
+8,163,New zealand
+8,51,New zealand
+8,108,New zealand
+9,163,United states
+9,164,Norway
+9,99,Norway
+9,74,Norway
+9,128,Norway
+10,58,Paraguay
+10,171,Paraguay
+10,13,Paraguay
+10,138,Paraguay
+10,123,Paraguay
+11,123,Senegal
+11,51,Senegal
+11,99,Senegal
+11,138,Senegal
+11,13,Senegal
+12,59,Slovenia
+12,97,Slovenia
+12,155,Slovenia
+12,26,Slovenia
+12,62,Slovenia
+13,58,Azerbaijan
+13,34,Azerbaijan
+13,150,Azerbaijan
+13,46,Azerbaijan
+13,115,Azerbaijan
+14,68,Malta
+14,97,Malta
+14,149,Malta
+14,59,Malta
+14,62,Malta
+15,149,Latvia
+15,58,Latvia
+15,26,Latvia
+15,34,Latvia
+15,108,Latvia
+16,54,Mexico
+16,184,Mexico
+16,41,Mexico
+16,153,Mexico
+16,79,Mexico
+17,124,Brazil
+17,9,Brazil
+17,79,Brazil
+17,138,Brazil
+17,22,Brazil
+18,51,Kazakhstan
+18,17,Kazakhstan
+18,3,Kazakhstan
+18,22,Kazakhstan
+18,109,Kazakhstan
+19,41,Usa
+19,79,Usa
+19,99,Usa
+19,118,Usa
+19,129,Usa
+20,59,Greenland
+20,0,Greenland
+20,125,Greenland
+20,50,Greenland
+20,161,Gibraltar
+21,44,Israel
+21,59,Israel
+21,50,Israel
+21,3,Israel
+21,104,Israel
+22,59,Aruba
+22,4,Aruba
+22,20,Aruba
+22,88,Aruba
+22,3,Aruba
+23,88,Guatemala
+23,31,Guatemala
+23,20,Guatemala
+23,0,Guatemala
+23,174,Guatemala
+24,129,Egypt
+24,111,Yemen
+24,32,Egypt
+24,114,Egypt
+24,58,Egypt
+25,173,Bolivia
+25,58,Bolivia
+25,29,Bolivia
+25,180,Bolivia
+25,79,Bolivia
+26,64,Nigeria
+26,142,Nigeria
+26,173,Nigeria
+26,181,Nigeria
+26,42,Nigeria
+27,180,Colombia
+27,0,Colombia
+27,142,Colombia
+27,58,Colombia
+27,32,Colombia
+28,174,Korea
+28,60,Korea
+28,97,Korea
+28,42,Korea
+28,22,Korea
+29,160,Armenia
+29,97,Armenia
+29,42,Armenia
+29,2,Armenia
+29,96,Armenia
+30,91,Germany
+30,23,Germany
+30,101,Germany
+30,180,Germany
+30,10,Germany
+31,71,Thailand
+31,175,Thailand
+31,10,Thailand
+31,91,Thailand
+31,142,Thailand
+32,128,Switzerland
+32,78,Switzerland
+32,180,Switzerland
+32,10,Switzerland
+32,145,Switzerland
+32,110,Switzerland
+33,48,Liechtenstein
+33,101,Liechtenstein
+33,32,Liechtenstein
+33,3,Liechtenstein
+33,142,Liechtenstein
+34,99,Italy
+34,105,Italy
+34,3,Italy
+34,11,Italy
+34,115,Italy
+35,115,Monaco
+35,14,Monaco
+35,10,Monaco
+35,148,Monaco
+35,121,Monaco
+35,18,Monaco
+36,105,Ireland
+36,160,Ivory coast
+36,99,Ireland
+36,122,Ireland
+36,139,Ivory coast
+37,33,Romania
+37,115,Romania
+37,122,Romania
+37,180,Romania
+37,10,Romania
+38,101,Australia
+38,77,Australia
+38,45,Australia
+38,143,Australia
+39,182,Iceland
+39,63,Iceland
+39,156,Iceland
+39,61,Iceland
+39,143,Iceland
+40,183,Croatia
+40,182,Croatia
+40,101,Croatia
+40,63,Croatia
+40,61,Croatia
+41,63,Mali
+41,98,Mali
+41,45,Mali
+41,117,Mali
+42,77,Russia
+42,80,Russia
+42,99,Russia
+42,154,Russia
+42,148,Russia
+43,95,Greece
+43,99,Greece
+43,142,Greece
+43,103,Greece
+43,80,Greece
+44,157,United kingdom
+44,67,United kingdom
+44,49,United kingdom
+44,77,United kingdom
+44,91,United kingdom
+45,121,India
+45,4,India
+45,80,India
+45,77,India
+45,102,India
+46,99,Canada
+46,32,Canada
+46,92,Canada
+46,182,Canada
+46,168,Canada
+47,52,Cuba
+47,80,Cuba
+47,99,Cuba
+47,36,Cuba
+47,180,Cuba
+48,182,Turkey
+48,168,Turkey
+48,82,Turkey
+48,68,Turkey
+48,49,Turkey
+49,124,Maldives
+49,52,Maldives
+49,36,Maldives
+49,102,Maldives
+49,132,Maldives
+50,38,Dominica
+50,123,Dominica
+50,142,Dominica
+50,86,Dominica
+50,168,Dominica
+51,1,Finland
+51,37,Finland
+51,38,Finland
+51,76,Finland
+51,148,Finland
+52,159,Georgia republic
+52,39,Georgia republic
+52,86,Georgia republic
+52,136,Georgia republic
+52,37,Georgia republic
+53,76,Catalonia
+53,159,Catalonia
+53,38,Catalonia
+53,91,Catalonia
+53,15,Catalonia
+54,7,Japan
+54,102,Japan
+54,82,Japan
+54,92,Japan
+54,63,Japan
+55,36,Jamaica
+55,102,Jamaica
+55,22,Jamaica
+55,115,Jamaica
+55,41,Jamaica
+56,68,Philippines
+56,41,Philippines
+56,104,Philippines
+56,63,Philippines
+56,142,Philippines
+57,22,France
+57,92,France
+57,168,France
+57,104,France
+57,63,France
+58,120,Estonia
+58,176,Estonia
+58,122,Estonia
+58,137,Estonia
+58,48,Estonia
+59,118,China
+59,68,China
+59,120,China
+59,169,China
+59,16,China
+60,130,Costa rica
+60,69,Costa rica
+60,114,Costa rica
+60,85,Costa rica
+60,127,Costa rica
+60,8,Costa rica
+60,165,Costa rica
+61,144,Denmark
+61,85,Denmark
+61,30,Denmark
+61,141,Denmark
+61,126,Denmark
+62,87,Haiti
+62,166,Haiti
+62,28,Haiti
+62,146,Haiti
+62,94,Cocos islands
+63,75,Hungary
+63,27,Hungary
+63,21,Hungary
+63,6,Hungary
+63,5,Hungary
+64,25,Indonesia
+64,172,Monaco
+64,75,Monaco
+64,5,Indonesia
+64,83,Monaco
+65,114,Ireland
+65,130,Ireland
+65,140,Ireland
+65,85,Ireland
+65,69,Ireland
+66,167,Moldova
+66,87,Romania
+66,141,Moldova
+66,126,Falkland islands (malvinas)
+66,100,Romania
+67,53,New zealand
+67,141,New zealand
+67,28,New zealand
+67,151,New zealand
+67,144,New zealand
+68,167,Paraguay
+68,126,Paraguay
+68,70,Paraguay
+68,57,Paraguay
+68,100,Paraguay
+69,140,Senegal
+69,178,Mali
+69,25,Senegal
+69,69,Senegal
+69,43,Senegal
+69,156,Senegal
+70,141,Costa rica
+70,28,Costa rica
+70,151,Sri lanka
+70,53,Costa rica
+70,144,Costa rica
+71,168,Denmark
+71,135,Switzerland
+71,65,Denmark
+71,69,Denmark
+71,116,Denmark
+72,144,Haiti
+72,30,Haiti
+72,85,Haiti
+72,32,Haiti
+72,35,Haiti
+73,8,Hungary
+73,144,Hungary
+73,57,Hungary
+73,87,Hungary
+73,126,Hungary
+74,73,Indonesia
+74,106,Indonesia
+74,65,Indonesia
+74,35,Indonesia
+74,168,Indonesia
+75,75,Ireland
+75,147,Ireland
+75,27,Ivory coast
+75,5,Ireland
+75,179,Ireland
+76,47,Moldova
+76,135,Moldova
+76,81,Moldova
+76,126,Romania
+76,94,Moldova
+77,35,New zealand
+77,65,New zealand
+77,116,New zealand
+77,168,New zealand
+77,106,New zealand
+78,138,Paraguay
+78,35,Paraguay
+78,102,Paraguay
+78,43,Paraguay
+78,89,Paraguay
+79,89,Tanzania
+79,114,Senegal
+79,127,Senegal
+79,43,Senegal
+79,25,Senegal
+80,144,Thailand
+80,35,Thailand
+80,32,Thailand
+81,113,Switzerland
+81,133,Switzerland
+81,35,Switzerland
+81,12,Switzerland
+81,102,Switzerland
+82,177,Liechtenstein
+82,32,Liechtenstein
+82,170,Liechtenstein
+82,91,Liechtenstein
+82,90,Haiti
+83,32,Italy
+83,144,Italy
+83,35,Italy
+83,126,Italy
+83,30,Italy
+84,8,Monaco
+84,28,Monaco
+84,53,Monaco
+84,151,Indonesia
+84,121,Monaco
+85,32,Ireland
+85,90,Ireland
+85,69,Ireland
+85,84,Ireland
+85,177,Ivory coast
+86,140,Romania
+86,85,Romania
+86,47,Romania
+86,24,Romania
+86,126,Romania
+87,177,Australia
+87,57,Australia
+87,170,Australia
+87,90,New zealand
+87,69,Australia
+87,123,Australia
+88,25,Eritrea
+88,6,Eritrea
+88,179,Eritrea
+88,83,Eritrea
+88,21,Eritrea
+89,72,Norfolk island
+89,87,Vatican city state
+89,35,Senegal
+89,102,Norfolk island
+89,152,Vatican city state
+90,65,Thailand
+90,85,Thailand
+90,21,Costa rica
+90,81,Thailand
+91,158,Switzerland
+91,166,Switzerland
+91,162,Switzerland
+91,107,Switzerland
+91,28,Switzerland
+92,102,Liechtenstein
+92,56,Liechtenstein
+92,87,Liechtenstein
+92,133,Liechtenstein
+92,43,Liechtenstein
+93,167,Italy
+93,100,Italy
+93,144,Italy
+93,141,Italy
+93,8,Italy
+94,166,Monaco
+94,107,Monaco
+94,87,Monaco
+94,94,Indonesia
+94,119,Monaco
+95,94,Ireland
+95,85,Ireland
+95,24,Ireland
+95,135,Ireland
+95,81,Ireland
+96,87,Romania
+96,166,Romania
+96,94,Romania
+96,162,Romania
+96,158,Romania
+97,12,Australia
+97,65,Australia
+97,168,Australia
+97,165,Australia
+97,69,Australia
+98,170,Croatia
+98,177,Croatia
+98,57,Croatia
+98,32,Croatia
+98,84,Croatia
+99,185,Senegal
+99,8,Mali
+99,144,Mali
+99,140,Mali
+99,141,Mali
