@@ -1,0 +1,7 @@
+method,accuracy-mean,accuracy-std
+MV,0.769,0.0
+LFC,0.898,0.0
+CRH,0.769,0.0
+ZN,0.583,0.0
+CATD,0.796,0.0
+GLAD,0.741,0.0

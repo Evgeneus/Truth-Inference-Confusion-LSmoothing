@@ -1,0 +1,7 @@
+method,accuracy-mean,accuracy-std
+MV_improved,0.775,0.029
+LFC_improved,0.792,0.028
+CRH_improved,0.771,0.034
+ZN_improved,0.77,0.035
+CATD_improved,0.774,0.031
+GLAD_improved,0.772,0.033

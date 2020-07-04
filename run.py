@@ -5,10 +5,18 @@ import numpy as np
 
 
 if __name__ == "__main__":
-    methods_list = ["MV", "LFC", "CRH", "ZN", "CATD"]
-    # answer_file = "datasets/faces/faces_all_ans_"
-    answer_file = "datasets/faces/faces_all_improved_ans_"
-    gt_file = "datasets/faces/faces_all_gold.csv"
+    # methods_list = ["MV", "LFC", "CRH", "ZN", "CATD", "GLAD"]
+    # methods_list = ["MV", "CRH", "ZN", "CATD"]
+    methods_list = ["GLAD"]
+    dataset = "food"
+    # answer_file = "datasets/{}/{}_Allvotes_ans_".format(dataset, dataset)
+    # answer_file = "datasets/{}/{}_5votes_ans_".format(dataset, dataset)
+    # answer_file = "datasets/{}/{}_Allvotes_improved_ans_".format(dataset, dataset)
+    # answer_file = "datasets/{}/{}_5votes_improved_ans_".format(dataset, dataset)
+    answer_file = "datasets/{}/{}_Allvotes_manclusters_ans_".format(dataset, dataset)
+    # answer_file = "datasets/{}/{}_5votes_manclusters_ans_".format(dataset, dataset)
+
+    gt_file = "datasets/{}/{}_all_gold.csv".format(dataset, dataset)
     data_res = []
 
     for method in methods_list:
@@ -75,8 +83,8 @@ if __name__ == "__main__":
                 num_unique_ans = df_[df_['question_ID'] == obj_id].answer.unique().shape[0]
                 if num_unique_ans == 1:
                     continue
-                gold_val = row['gold_label']
-                agg_val = e2truth[obj_id]
+                gold_val = str(row['gold_label'])
+                agg_val = str(e2truth[obj_id])
                 num_with_conflicts += 1
                 if agg_val == gold_val:
                     num_correct += 1.
