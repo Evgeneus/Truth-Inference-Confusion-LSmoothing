@@ -5,10 +5,8 @@ import numpy as np
 
 
 if __name__ == "__main__":
-    # methods_list = ["MV", "LFC", "CRH", "ZN", "CATD", "GLAD"]
-    # methods_list = ["MV", "CRH", "ZN", "CATD"]
-    methods_list = ["GLAD"]
-    dataset = "food"
+    methods_list = ["MV", "LFC", "CRH", "ZN", "CATD", "GLAD"]
+    dataset = "dog"
     # answer_file = "datasets/{}/{}_Allvotes_ans_".format(dataset, dataset)
     # answer_file = "datasets/{}/{}_5votes_ans_".format(dataset, dataset)
     # answer_file = "datasets/{}/{}_Allvotes_improved_ans_".format(dataset, dataset)
